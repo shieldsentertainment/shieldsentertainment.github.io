@@ -1,0 +1,29 @@
+/* ie-fix.css */
+
+nav.main {
+    bottom: 5px;
+}
+
+.service-info-panel,
+main section h2,
+main section .photo-left,
+main section blockquote
+{
+    behavior: url(pie/PIE.htc);
+}
+
+.liteAccordion .slide h2,
+.liteAccordion .slide > h2 span,
+.liteAccordion .slide > h2 b,
+.liteAccordion .ap-caption,
+.liteAccordion.stitch,
+.liteAccordion.stitch.rounded > ol,
+.liteAccordion.rounded, .rounded > ol,
+.liteAccordion.rounded .slide > h2 span,
+.liteAccordion.ie.stitch .slide > h2,
+.liteAccordion.ie.stitch .slide > h2 span,
+.liteAccordion.ie.stitch .slide > h2.selected:after
+{
+    behavior: url(pie/PIE.htc);
+}
+
