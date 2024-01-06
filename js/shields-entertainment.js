@@ -29,3 +29,26 @@ ga('send', 'pageview');
 $(document).ready(function() {
   $('#copy-year').text(new Date().getFullYear());
 });
+
+function gallerySelect(e) {
+  console.log("Gallery select", e);
+  return false;
+}
+
+$('.gallery .gallery-thumbs li a').on("click", function(e) {
+  e.preventDefault();
+
+  thumb = $(e.target);
+  galleryMain = thumb.closest(".gallery-inner").find(".gallery-main img");
+
+  // Set the main image
+  galleryMain.attr("src", thumb.attr("src"));
+
+  // Remove current 'active'
+  galleryThumbs = thumb.closest(".gallery-thumbs");
+  galleryThumbs.find("li").removeClass("active");
+
+  // Set the new active thumb
+  thumb.closest("li").addClass("active");
+  
+});
