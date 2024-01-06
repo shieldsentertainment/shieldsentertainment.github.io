@@ -416,3 +416,59 @@ div#page > footer {
     clear: both;
 }
 
+div.gallery {
+    line-height: 0;
+
+    div.gallery-inner {
+        margin: 0 auto;
+        max-width: 700px;
+        padding: 3px;
+        border: 1px solid #999;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        border-radius: 4px;
+
+        div.gallery-main {
+            width: 100%;
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        div.gallery-thumbs-row {
+            padding: 3px;
+            background-color: #212121;
+        }
+
+        div.gallery-thumbs {
+            display: table;
+            margin: 0 auto;
+            
+    
+            ul, ul li {
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+                display: inline-block;
+            }
+    
+            img {
+                max-width: 100px;
+                max-height: 120px;
+
+                filter: brightness(60%);
+            }
+        
+            li.active {
+                img {
+                    filter: brightness(100%);
+                }
+            }
+
+            
+        }
+    }
+
+}
