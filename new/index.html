@@ -140,6 +140,8 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.6rem
 .new{display:inline-block;background:var(--gold);color:var(--ink);font:700 .85rem var(--body);padding:.15rem .7rem;border-radius:999px;margin-right:.5rem}
 .social{display:flex;gap:1.2rem;margin-top:1rem}
 
+.highlight{font-weight: bold; color:var(--coral)}
+
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}.beams{animation:none}.slide img,.btn{transition:none}
 }
@@ -245,7 +247,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.6rem
       </div>
       <div>
         <h2 style="margin-bottom:1.5rem">Meet James Shields</h2>
-        <p>James started DJing in 2000 and formed Shields Entertainment in 2013 to offer high-end entertainment under his own brand. Born and raised in Edinburgh, he has played everything from pubs and clubs to karaoke nights and resident spots across the city. These days the crates of CDs are laptops, but the aim is the same: listen to what you want and build the night around it.</p>
+        <p>James started DJing in 2000 and formed <span class="highlight">Shields Entertainment</span> in 2013 to offer high-end entertainment under his own brand. Born and raised in Edinburgh, he has played everything from pubs and clubs to karaoke nights and resident spots across the city. These days the crates of CDs are laptops, but the aim is the same: listen to what you want and build the night around it.</p>
         <p>Since 2016 James has volunteered as an audio commentator for visually impaired Hearts fans at Tynecastle Park. He is also the matchday stadium announcer for Queen&rsquo;s Park F.C.</p>
         <div class="venues">
           <h3>Previous residencies</h3>
@@ -270,8 +272,22 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.6rem
       </div>
     </div>
   </section>
+  
+  <section id="braid-hills">
+	<div class="wrap">
+		<div class="head"><h2>Need a Wedding Venue?</h2></div>
+		<div class="row">
+			<h3>Shields Entertainment have partnered with <span class="highlight">Braid Hills Hotel</span> to deliver a complete wedding day package!</h3>
+			<div>
+				<p><a href="https://www.braidhillshotel.com/services/weddings/" target="_blank">Braid Hills Hotel</a> offers a historic and scenic setting for weddings in Edinburgh. Built in 1886, the hotel combines Victorian character with views overlooking Braidburn Valley Park. The hotel can accommodate weddings of various sizes, with the <span class="highlight">Braid Suite</span> hosting up to 40 guests for ceremonies and 120 guests for evening receptions. For smaller celebrations, the <span class="highlight">Library</span> provides an intimate setting for 16–28 guests.
+	With 71 unique bedrooms, dining facilities and a range of event spaces, Braid Hills Hotel offers a convenient setting for couples and their guests to celebrate and stay in one location.</p>
+				<p style="margin-top: 1em"><a href="Wedding Brochure - Braid Hills Hotel (2026).pdf" target="_blank">View their wedding brochure here.</a></p>
+			</div>
+		</div>
+	</div>
+  </section>
 
-  <section id="contact">
+  <section id="contact" class="alt">
     <div class="wrap split">
       <div>
         <h2>Get a quote</h2>
@@ -279,7 +295,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.6rem
         <ul class="details" id="details"></ul>
         <div class="social">
           <a href="https://www.facebook.com/shieldsentertainment" rel="noopener">Facebook</a>
-          <a href="https://twitter.com/shieldsent1" rel="noopener">Twitter</a>
+          <a href="https://x.com/shieldsent1" rel="noopener">X</a>
         </div>
       </div>
       <form id="enquiry">
@@ -299,6 +315,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.6rem
       </form>
     </div>
   </section>
+  
 </main>
 
 <footer>
